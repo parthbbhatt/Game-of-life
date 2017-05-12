@@ -1,0 +1,13 @@
+/* Alan Watson  2017 */
+
+.gameSquare{
+    width: 10px;
+    height: 10px;
+    background-color: #555;
+    //border: 2px solid;
+    margin: 0;
+    
+}
+table{
+    background-color: #000;
+}

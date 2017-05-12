@@ -1,0 +1,35 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Game of Life</title>
+        <script src="game.js"></script>
+        <link rel="stylesheet" href="common.css" type="text/css"/>
+        <!-- Alan Watson 2017 -->
+    </head>
+    <body>
+        <table id="gameBoard"></table>
+        
+        <input type="text" id="width" placeholder="width"/>
+        <input type="text" id="height" placeholder="height"/>
+        <button onclick="buildBoard();">Create Array</button>
+        <button onclick="startLoop(true);">Start</button>
+        <button onclick="loopRunning = false;">Stop</button>
+        <select id="loopSpeed" onchange="changeLoopSpeed()">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="4">4</option>
+            <option value="8">8</option>
+            <option value="16">16</option>
+            <option value="32">32</option>
+            <option value="64">64</option>
+        </select>
+        <br>
+        Wrap: <input type="checkbox" onclick="toggleLoop(this)" checked>
+        Grid: <input type="checkbox" onclick="toggleGrid(this)" checked id="gridBtn">
+        <!--<button onclick="exportGame()">Export Game</button>-->
+        <!--<input type="text" placeholder="Game Data" id="gameData"/>-->
+        <!--<button onclick="importGame()">Import Game</button>-->
+        
+        <!--100x53-->
+    </body>
+</html>
